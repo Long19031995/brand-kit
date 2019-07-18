@@ -1,10 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Box from './components/Box.vue'
 import router from './router'
 
-new Vue({
-  render: h => h(App),
-  router
-}).$mount('#app')
+Vue.component('Box', Box)
 
-require('../filenames.js').forEach((filename) => require(`./assets/css/${filename}.scss`))
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App },
+  router
+})
+
+require('../src/assets/css/index.scss')

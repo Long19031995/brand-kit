@@ -1,0 +1,384 @@
+// white
+$White: #ffffff;
+
+// Red
+$R50: #faf5f4;
+$R75: #f6d4cb;
+$R100: #faa691;
+$R200: #e66b4c;
+$R400: #bc654f;
+$R600: #955c4e;
+$R800: #6b4940;
+$R900: #43322e;
+
+// Yellow
+$Y50: #f8f5f1;
+$Y75: #f7dec3;
+$Y100: #fcc58b;
+$Y200: #fbb66c;
+$Y400: #dd9b6c;
+$Y600: #af8160;
+$Y800: #785d4a;
+$Y900: #514238;
+
+// Purple
+$P50: #f3f2f8;
+$P75: #ddd8f0;
+$P100: #b0a2e5;
+$P200: #7963cf;
+$P400: #685a9e;
+$P600: #595178;
+$P800: #454058;
+$P900: #322f3c;
+
+// Green
+$G50: #f2f8f5;
+$G75: #daf2e4;
+$G100: #a3e6bf;
+$G200: #60d290;
+$G400: #64b385;
+$G600: #538166;
+$G800: #496555;
+$G900: #2d3c34;
+
+// Ocean
+$O50: #f3f7f9;
+$O75: #d9ebf7;
+$O100: #98cef3;
+$O200: #33adff;
+$O400: #459dd9;
+$O600: #538eb6;
+$O800: #507085;
+$O900: #2c363c;
+
+// Neutral
+$N50: #f6f9fa;
+$N75: #e8edf0;
+$N100: #ced5da;
+$N200: #9da4a8;
+$N400: #71787d;
+$N600: #586065;
+$N800: #373e43;
+$N900: #24292d;
+
+// text white
+.text-white {
+  color: $White;
+}
+
+// text red
+.text-r50 {
+  color: $R50;
+}
+.text-r75 {
+  color: $R75;
+}
+.text-r100 {
+  color: $R100;
+}
+.text-r200 {
+  color: $R200;
+}
+.text-r400 {
+  color: $R400;
+}
+.text-r600 {
+  color: $R600;
+}
+.text-r800 {
+  color: $R800;
+}
+.text-r900 {
+  color: $R900;
+}
+
+// text yellow
+.text-y50 {
+  color: $Y50;
+}
+.text-y75 {
+  color: $Y75;
+}
+.text-y100 {
+  color: $Y100;
+}
+.text-y200 {
+  color: $Y200;
+}
+.text-y400 {
+  color: $Y400;
+}
+.text-y600 {
+  color: $Y600;
+}
+.text-y800 {
+  color: $Y800;
+}
+.text-y900 {
+  color: $Y900;
+}
+
+// text purple
+.text-p50 {
+  color: $P50;
+}
+.text-p75 {
+  color: $P75;
+}
+.text-p100 {
+  color: $P100;
+}
+.text-p200 {
+  color: $P200;
+}
+.text-p400 {
+  color: $P400;
+}
+.text-p600 {
+  color: $P600;
+}
+.text-p800 {
+  color: $P800;
+}
+.text-p900 {
+  color: $P900;
+}
+
+// text green
+.text-g50 {
+  color: $G50;
+}
+.text-g75 {
+  color: $G75;
+}
+.text-g100 {
+  color: $G100;
+}
+.text-g200 {
+  color: $G200;
+}
+.text-g400 {
+  color: $G400;
+}
+.text-g600 {
+  color: $G600;
+}
+.text-g800 {
+  color: $G800;
+}
+.text-g900 {
+  color: $G900;
+}
+
+// text ocean
+.text-o50 {
+  color: $O50;
+}
+.text-o75 {
+  color: $O75;
+}
+.text-o100 {
+  color: $O100;
+}
+.text-o200 {
+  color: $O200;
+}
+.text-o400 {
+  color: $O400;
+}
+.text-o600 {
+  color: $O600;
+}
+.text-o800 {
+  color: $O800;
+}
+.text-o900 {
+  color: $O900;
+}
+
+// text neutral
+.text-n50 {
+  color: $N50;
+}
+.text-n75 {
+  color: $N75;
+}
+.text-n100 {
+  color: $N100;
+}
+.text-n200 {
+  color: $N200;
+}
+.text-n400 {
+  color: $N400;
+}
+.text-n600 {
+  color: $N600;
+}
+.text-n800 {
+  color: $N800;
+}
+.text-n900 {
+  color: $N900;
+}
+
+// background white
+.bg-white {
+  background-color: $White;
+}
+
+// background red
+.bg-r50 {
+  background-color: $R50;
+}
+.bg-r75 {
+  background-color: $R75;
+}
+.bg-r100 {
+  background-color: $R100;
+}
+.bg-r200 {
+  background-color: $R200;
+}
+.bg-r400 {
+  background-color: $R400;
+}
+.bg-r600 {
+  background-color: $R600;
+}
+.bg-r800 {
+  background-color: $R800;
+}
+.bg-r900 {
+  background-color: $R900;
+}
+
+// background yellow
+.bg-y50 {
+  background-color: $Y50;
+}
+.bg-y75 {
+  background-color: $Y75;
+}
+.bg-y100 {
+  background-color: $Y100;
+}
+.bg-y200 {
+  background-color: $Y200;
+}
+.bg-y400 {
+  background-color: $Y400;
+}
+.bg-y600 {
+  background-color: $Y600;
+}
+.bg-y800 {
+  background-color: $Y800;
+}
+.bg-y900 {
+  background-color: $Y900;
+}
+
+// background purple
+.bg-p50 {
+  background-color: $P50;
+}
+.bg-p75 {
+  background-color: $P75;
+}
+.bg-p100 {
+  background-color: $P100;
+}
+.bg-p200 {
+  background-color: $P200;
+}
+.bg-p400 {
+  background-color: $P400;
+}
+.bg-p600 {
+  background-color: $P600;
+}
+.bg-p800 {
+  background-color: $P800;
+}
+.bg-p900 {
+  background-color: $P900;
+}
+
+// background green
+.bg-g50 {
+  background-color: $G50;
+}
+.bg-g75 {
+  background-color: $G75;
+}
+.bg-g100 {
+  background-color: $G100;
+}
+.bg-g200 {
+  background-color: $G200;
+}
+.bg-g400 {
+  background-color: $G400;
+}
+.bg-g600 {
+  background-color: $G600;
+}
+.bg-g800 {
+  background-color: $G800;
+}
+.bg-g900 {
+  background-color: $G900;
+}
+
+// background ocean
+.bg-o50 {
+  background-color: $O50;
+}
+.bg-o75 {
+  background-color: $O75;
+}
+.bg-o100 {
+  background-color: $O100;
+}
+.bg-o200 {
+  background-color: $O200;
+}
+.bg-o400 {
+  background-color: $O400;
+}
+.bg-o600 {
+  background-color: $O600;
+}
+.bg-o800 {
+  background-color: $O800;
+}
+.bg-o900 {
+  background-color: $O900;
+}
+
+// background neutral
+.bg-n50 {
+  background-color: $N50;
+}
+.bg-n75 {
+  background-color: $N75;
+}
+.bg-n100 {
+  background-color: $N100;
+}
+.bg-n200 {
+  background-color: $N200;
+}
+.bg-n400 {
+  background-color: $N400;
+}
+.bg-n600 {
+  background-color: $N600;
+}
+.bg-n800 {
+  background-color: $N800;
+}
+.bg-n900 {
+  background-color: $N900;
+}
