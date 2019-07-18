@@ -10,7 +10,7 @@
         Primary Colors
       </div>
       <div class="content">
-        <Box content=".text-o200">
+        <Box content="text-o200">
           <div class="item bg-o200">
             <div class="item__title">
               Ocean 200
@@ -18,7 +18,7 @@
           </div>
         </Box>
 
-        <Box content=".text-n900">
+        <Box content="text-n900">
           <div class="item bg-n900">
             <div class="item__title">
               N900
@@ -26,7 +26,7 @@
           </div>
         </Box>
 
-        <Box content=".text-white">
+        <Box content="text-white">
           <div class="item bg-white">
             <div class="item__title">
               Cloud
