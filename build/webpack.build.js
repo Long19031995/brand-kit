@@ -2,40 +2,25 @@ const path = require('path')
 const fs = require('fs')
 
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-const optimizeCssAssetsPlugin = new OptimizeCssAssetsPlugin({
-  assetNameRegExp: /\.css$/g,
-  cssProcessor: require('cssnano'),
-  cssProcessorPluginOptions: {
-    preset: ['default', { discardComments: { removeAll: true } }],
-  },
-  canPrint: true
-})
-
-const listRuleCss = []
-const listPluginCss = []
-
-fs.readdirSync('./src/assets/css').forEach((file) => {
-  const filename = file.replace(/.scss/g, '')
-  const extractScss = new ExtractTextPlugin(`../brand-kit/css/${filename}.css`)
-
-  listRuleCss.push({
-    test: new RegExp(`${filename}.scss`, 'g'),
-    use: extractScss.extract({ fallback: 'style-loader', use: ['css-loader', 'sass-loader'] })
+function getListEntry (folder, listEntry = []){
+  fs.readdirSync(folder).forEach((file) => {
+    const path = `${folder}/${file}`
+    fs.statSync(path).isDirectory() ? getListEntry(path) : listEntry.push(path)
   })
 
-  listPluginCss.push(extractScss)
-})
+  return listEntry
+}
 
 module.exports = {
-  entry: {
-    app: path.join(__dirname, '../build/index.js')
-  },
+  entry: getListEntry('./src/assets/css'),
   output: {
-    path: path.join(__dirname, '../dist'),
-    filename: '[name].js',
+    path: path.join(__dirname, '../brand-kit'),
+    filename: 'main.js',
     publicPath: '/'
+  },
+  stats: {
+    all: false
   },
   module: {
     rules: [
@@ -45,7 +30,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 4096,
+              limit: 0,
               name: '../brand-kit/img/[name].[hash:8].[ext]'
             }
           }
@@ -57,17 +42,34 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 4096,
+              limit: 0,
               name: '../brand-kit/fonts/[name].[hash:8].[ext]'
             }
           }
         ]
       },
-      ...listRuleCss
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '../brand-kit/css/[name].css',
+            }
+          },
+          'extract-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ],
+      }
     ]
   },
   plugins: [
-    optimizeCssAssetsPlugin,
-    ...listPluginCss
+    new OptimizeCssAssetsPlugin(),
   ]
 }
