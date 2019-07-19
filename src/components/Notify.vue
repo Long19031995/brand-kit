@@ -1,5 +1,5 @@
 <template>
-  <div v-if="message" class="notify">
+  <div v-if="message" class="notify font-regular">
     {{ message }}
   </div>
 </template>

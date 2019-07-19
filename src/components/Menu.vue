@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <div class="menu font-regular">
     <div class="brand">
       VIEW
     </div>

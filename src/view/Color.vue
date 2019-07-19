@@ -61,336 +61,336 @@ export default {
     return {
       primaryColors: [
         {
-          class: 'bg-o200',
-          content: 'text-o200',
+          class: 'brand-bg-o200',
+          content: 'brand-text-o200',
           title: 'Ocean 200',
           color: 'color-white'
         },
         {
-          class: 'bg-n900',
-          content: 'text-n900',
+          class: 'brand-bg-n900',
+          content: 'brand-text-n900',
           title: 'N900',
           color: 'color-white'
         },
         {
-          class: 'bg-white',
-          content: 'text-white',
+          class: 'brand-bg-white border-black',
+          content: 'brand-text-white',
           title: 'Cloud',
           color: 'color-black'
         }
       ],
       secondaryColors: [
         {
-          class: 'bg-r200',
-          content: 'text-r200',
+          class: 'brand-bg-r200',
+          content: 'brand-text-r200',
           title: 'Red 200',
           color: 'color-white'
         },
         {
-          class: 'bg-y200',
-          content: 'text-y200',
+          class: 'brand-bg-y200',
+          content: 'brand-text-y200',
           title: 'Yellow 200',
           color: 'color-white'
         },
         {
-          class: 'bg-p200',
-          content: 'text-p200',
+          class: 'brand-bg-p200',
+          content: 'brand-text-p200',
           title: 'Purple 200',
           color: 'color-white'
         },
         {
-          class: 'bg-g200',
-          content: 'text-g200',
+          class: 'brand-bg-g200',
+          content: 'brand-text-g200',
           title: 'Green 200',
           color: 'color-white'
         }
       ],
       extended: [
         {
-          class: 'bg-r50',
-          content: 'text-r50',
+          class: 'brand-bg-r50',
+          content: 'brand-text-r50',
           title: 'R50',
           color: 'color-black'
         },
         {
-          class: 'bg-y50',
-          content: 'text-y50',
+          class: 'brand-bg-y50',
+          content: 'brand-text-y50',
           title: 'Y50',
           color: 'color-black'
         },
         {
-          class: 'bg-p50',
-          content: 'text-p50',
+          class: 'brand-bg-p50',
+          content: 'brand-text-p50',
           title: 'P50',
           color: 'color-black'
         },
         {
-          class: 'bg-g50',
-          content: 'text-g50',
+          class: 'brand-bg-g50',
+          content: 'brand-text-g50',
           title: 'G50',
           color: 'color-black'
         },
         {
-          class: 'bg-o50',
-          content: 'text-o50',
+          class: 'brand-bg-o50',
+          content: 'brand-text-o50',
           title: 'O50',
           color: 'color-black'
         },
         {
-          class: 'bg-n50',
-          content: 'text-n50',
+          class: 'brand-bg-n50',
+          content: 'brand-text-n50',
           title: 'N50',
           color: 'color-black'
         },
         {
-          class: 'bg-r75',
-          content: 'text-r75',
+          class: 'brand-bg-r75',
+          content: 'brand-text-r75',
           title: 'R75',
           color: 'color-black'
         },
         {
-          class: 'bg-y75',
-          content: 'text-y75',
+          class: 'brand-bg-y75',
+          content: 'brand-text-y75',
           title: 'Y75',
           color: 'color-black'
         },
         {
-          class: 'bg-p75',
-          content: 'text-p75',
+          class: 'brand-bg-p75',
+          content: 'brand-text-p75',
           title: 'P75',
           color: 'color-black'
         },
         {
-          class: 'bg-g75',
-          content: 'text-g75',
+          class: 'brand-bg-g75',
+          content: 'brand-text-g75',
           title: 'G75',
           color: 'color-black'
         },
         {
-          class: 'bg-o75',
-          content: 'text-o75',
+          class: 'brand-bg-o75',
+          content: 'brand-text-o75',
           title: 'O75',
           color: 'color-black'
         },
         {
-          class: 'bg-n75',
-          content: 'text-n75',
+          class: 'brand-bg-n75',
+          content: 'brand-text-n75',
           title: 'N75',
           color: 'color-black'
         },
         {
-          class: 'bg-r100',
-          content: 'text-r100',
+          class: 'brand-bg-r100',
+          content: 'brand-text-r100',
           title: 'R100',
           color: 'color-black'
         },
         {
-          class: 'bg-y100',
-          content: 'text-y100',
+          class: 'brand-bg-y100',
+          content: 'brand-text-y100',
           title: 'Y100',
           color: 'color-black'
         },
         {
-          class: 'bg-p100',
-          content: 'text-p100',
+          class: 'brand-bg-p100',
+          content: 'brand-text-p100',
           title: 'P100',
           color: 'color-black'
         },
         {
-          class: 'bg-g100',
-          content: 'text-g100',
+          class: 'brand-bg-g100',
+          content: 'brand-text-g100',
           title: 'G100',
           color: 'color-black'
         },
         {
-          class: 'bg-o100',
-          content: 'text-o100',
+          class: 'brand-bg-o100',
+          content: 'brand-text-o100',
           title: 'O100',
           color: 'color-black'
         },
         {
-          class: 'bg-n100',
-          content: 'text-n100',
+          class: 'brand-bg-n100',
+          content: 'brand-text-n100',
           title: 'N100',
           color: 'color-black'
         },
         {
-          class: 'bg-r200',
-          content: 'text-r200',
+          class: 'brand-bg-r200',
+          content: 'brand-text-r200',
           title: 'R200',
           color: 'color-black'
         },
         {
-          class: 'bg-y200',
-          content: 'text-y200',
+          class: 'brand-bg-y200',
+          content: 'brand-text-y200',
           title: 'Y200',
           color: 'color-black'
         },
         {
-          class: 'bg-p200',
-          content: 'text-p200',
+          class: 'brand-bg-p200',
+          content: 'brand-text-p200',
           title: 'P200',
           color: 'color-black'
         },
         {
-          class: 'bg-g200',
-          content: 'text-g200',
+          class: 'brand-bg-g200',
+          content: 'brand-text-g200',
           title: 'G200',
           color: 'color-black'
         },
         {
-          class: 'bg-o200',
-          content: 'text-o200',
+          class: 'brand-bg-o200',
+          content: 'brand-text-o200',
           title: 'O200',
           color: 'color-black'
         },
         {
-          class: 'bg-n200',
-          content: 'text-n200',
+          class: 'brand-bg-n200',
+          content: 'brand-text-n200',
           title: 'N200',
           color: 'color-black'
         },
         {
-          class: 'bg-r400',
-          content: 'text-r400',
+          class: 'brand-bg-r400',
+          content: 'brand-text-r400',
           title: 'R400',
           color: 'color-black'
         },
         {
-          class: 'bg-y400',
-          content: 'text-y400',
+          class: 'brand-bg-y400',
+          content: 'brand-text-y400',
           title: 'Y400',
           color: 'color-black'
         },
         {
-          class: 'bg-p400',
-          content: 'text-p400',
+          class: 'brand-bg-p400',
+          content: 'brand-text-p400',
           title: 'P400',
           color: 'color-white'
         },
         {
-          class: 'bg-g400',
-          content: 'text-g400',
+          class: 'brand-bg-g400',
+          content: 'brand-text-g400',
           title: 'G400',
           color: 'color-white'
         },
         {
-          class: 'bg-o400',
-          content: 'text-o400',
+          class: 'brand-bg-o400',
+          content: 'brand-text-o400',
           title: 'O400',
           color: 'color-white'
         },
         {
-          class: 'bg-n400',
-          content: 'text-n400',
+          class: 'brand-bg-n400',
+          content: 'brand-text-n400',
           title: 'N400',
           color: 'color-white'
         },
         {
-          class: 'bg-r600',
-          content: 'text-r600',
+          class: 'brand-bg-r600',
+          content: 'brand-text-r600',
           title: 'R600',
           color: 'color-white'
         },
         {
-          class: 'bg-y600',
-          content: 'text-y600',
+          class: 'brand-bg-y600',
+          content: 'brand-text-y600',
           title: 'Y600',
           color: 'color-white'
         },
         {
-          class: 'bg-p600',
-          content: 'text-p600',
+          class: 'brand-bg-p600',
+          content: 'brand-text-p600',
           title: 'P600',
           color: 'color-white'
         },
         {
-          class: 'bg-g600',
-          content: 'text-g600',
+          class: 'brand-bg-g600',
+          content: 'brand-text-g600',
           title: 'G600',
           color: 'color-white'
         },
         {
-          class: 'bg-o600',
-          content: 'text-o600',
+          class: 'brand-bg-o600',
+          content: 'brand-text-o600',
           title: 'O600',
           color: 'color-white'
         },
         {
-          class: 'bg-n600',
-          content: 'text-n600',
+          class: 'brand-bg-n600',
+          content: 'brand-text-n600',
           title: 'N600',
           color: 'color-white'
         },
         {
-          class: 'bg-r800',
-          content: 'text-r800',
+          class: 'brand-bg-r800',
+          content: 'brand-text-r800',
           title: 'R800',
           color: 'color-white'
         },
         {
-          class: 'bg-y800',
-          content: 'text-y800',
+          class: 'brand-bg-y800',
+          content: 'brand-text-y800',
           title: 'Y800',
           color: 'color-white'
         },
         {
-          class: 'bg-p800',
-          content: 'text-p800',
+          class: 'brand-bg-p800',
+          content: 'brand-text-p800',
           title: 'P800',
           color: 'color-white'
         },
         {
-          class: 'bg-g800',
-          content: 'text-g800',
+          class: 'brand-bg-g800',
+          content: 'brand-text-g800',
           title: 'G800',
           color: 'color-white'
         },
         {
-          class: 'bg-o800',
-          content: 'text-o800',
+          class: 'brand-bg-o800',
+          content: 'brand-text-o800',
           title: 'O800',
           color: 'color-white'
         },
         {
-          class: 'bg-n800',
-          content: 'text-n800',
+          class: 'brand-bg-n800',
+          content: 'brand-text-n800',
           title: 'N800',
           color: 'color-white'
         },
         {
-          class: 'bg-r900',
-          content: 'text-r900',
+          class: 'brand-bg-r900',
+          content: 'brand-text-r900',
           title: 'R900',
           color: 'color-white'
         },
         {
-          class: 'bg-y900',
-          content: 'text-y900',
+          class: 'brand-bg-y900',
+          content: 'brand-text-y900',
           title: 'Y900',
           color: 'color-white'
         },
         {
-          class: 'bg-p900',
-          content: 'text-p900',
+          class: 'brand-bg-p900',
+          content: 'brand-text-p900',
           title: 'P900',
           color: 'color-white'
         },
         {
-          class: 'bg-g900',
-          content: 'text-g900',
+          class: 'brand-bg-g900',
+          content: 'brand-text-g900',
           title: 'G900',
           color: 'color-white'
         },
         {
-          class: 'bg-o900',
-          content: 'text-o900',
+          class: 'brand-bg-o900',
+          content: 'brand-text-o900',
           title: 'O900',
           color: 'color-white'
         },
         {
-          class: 'bg-n900',
-          content: 'text-n900',
+          class: 'brand-bg-n900',
+          content: 'brand-text-n900',
           title: 'N900',
           color: 'color-white'
         }
@@ -407,6 +407,10 @@ export default {
 
 .color-black {
   color: #3c3e42;
+}
+
+.border-black {
+  border: 1px solid #e6e8eb;
 }
 
 .view-color {
@@ -451,16 +455,6 @@ export default {
     .content {
       display: flex;
       flex-wrap: wrap;
-      .box {
-        &:nth-child(3) {
-          .item {
-            border: 1px solid #e6e8eb;
-            &__title {
-              color: #3c3e42;
-            }
-          }
-        }
-      }
     }
   }
 
