@@ -3,9 +3,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
-const htmlWebpackPlugin = new HtmlWebpackPlugin({ template: './index.html' })
-const vueLoaderPlugin = new VueLoaderPlugin()
-
 module.exports = {
   devServer: {
     inline: true,
@@ -25,29 +22,21 @@ module.exports = {
         loader: 'vue-loader'
       },
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        test: /\.s?css$/,
+        loader: 'style-loader!css-loader!sass-loader'
+      },
+      {
+        test: /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/,
+        loader: 'file-loader'
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 4096,
-              name: 'fonts/[name].[hash:8].[ext]'
-            }
-          }
-        ]
+        loader: 'url-loader'
       }
     ]
   },
   plugins: [
-    vueLoaderPlugin,
-    htmlWebpackPlugin
+    new VueLoaderPlugin(),
+    new HtmlWebpackPlugin({ template: './index.html' })
   ]
 }

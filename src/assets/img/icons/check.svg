@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>45f96f6e-cea8-43a4-aa8d-7b114a9424e2@1.00x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="14 5.85294118 12.0909091 4 6.63636364 9.29411765 3.90909091 6.64705882 2 8.5 6.63636364 13"></polygon>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/16/Check">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Check" fill="#24292D" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

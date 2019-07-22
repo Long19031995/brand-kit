@@ -7,11 +7,13 @@ import router from './router'
 Vue.component('Box', Box)
 Vue.component('Tab', Tab)
 
+require('../src/assets/css/index.scss')
+require('../src/assets/js/index.js')
+require('highlight.js/styles/monokai.css')
+
 new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
   router
 })
-
-require('../src/assets/css/index.scss')

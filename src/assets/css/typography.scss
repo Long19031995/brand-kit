@@ -1,3 +1,6 @@
+@import './colors.scss';
+@import './fonts.scss';
+
 .brand-text-left {
   text-align: left;
 }
@@ -12,60 +15,79 @@
 
 .brand-h600 {
   font-size: 48px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 60px;
 }
 
 .brand-h500 {
   font-size: 32px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 40px;
 }
 
 .brand-h400 {
   font-size: 24px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 36px;
 }
 
 .brand-h300 {
   font-size: 21px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 28px;
 }
 
 .brand-h200 {
   font-size: 18px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 24px;
 }
 
 .brand-h100 {
   font-size: 15px;
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
   line-height: 20px;
 }
 
 .brand-paragraph {
   font-size: 17px;
-  font-family: NotoSans-Medium;
+  font-family: $font-medium;
   line-height: 28px;
 }
 
 .brand-paragraph-sm {
   font-size: 15px;
-  font-family: NotoSans-Regular;
+  font-family: $font-regular;
   line-height: 24px;
 }
 
 .brand-font-regular {
-  font-family: NotoSans-Regular;
+  font-family: $font-regular;
 }
 
 .brand-font-medium {
-  font-family: NotoSans-Medium;
+  font-family: $font-medium;
 }
 
 .brand-font-bold {
-  font-family: NotoSans-Bold;
+  font-family: $font-bold;
+}
+
+.brand-link {
+  color: $O200;
+  font-size: 17px;
+  font-family: $font-medium;
+  line-height: 28px;
+  &:hover {
+    color: $O400;
+    cursor: pointer;
+  }
+  &:active {
+    color: $O800;
+  }
+}
+
+.brand-link--small {
+  font-size: 15px;
+  line-height: 24px;
 }

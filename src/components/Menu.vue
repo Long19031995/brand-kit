@@ -19,41 +19,53 @@ export default {
     return {
       listMenu: [
         {
-          name: 'Button',
-          nameRoute: 'view-button'
+          name: 'Logo',
+          nameRoute: 'view-logo'
         },
         {
-          name: 'Color',
-          nameRoute: 'view-color'
+          name: 'Logo App',
+          nameRoute: 'view-logo-app'
         },
         {
-          name: 'Common',
-          nameRoute: 'view-common'
+          name: 'Colors',
+          nameRoute: 'view-colors'
         },
         {
-          name: 'Depths',
-          nameRoute: 'view-depths'
-        },
-        {
-          name: 'Form',
-          nameRoute: 'view-form'
+          name: 'Typography',
+          nameRoute: 'view-typography'
         },
         {
           name: 'Grids',
           nameRoute: 'view-grids'
         },
         {
-          name: 'Modals',
-          nameRoute: 'view-modals'
+          name: 'Icons',
+          nameRoute: 'view-icons'
+        },
+        {
+          name: 'Depths',
+          nameRoute: 'view-depths'
+        },
+        {
+          name: 'Buttons',
+          nameRoute: 'view-buttons'
         },
         {
           name: 'Pagination',
           nameRoute: 'view-pagination'
         },
         {
-          name: 'Typography',
-          nameRoute: 'view-typography'
-        }
+          name: 'Modals',
+          nameRoute: 'view-modals'
+        },
+        {
+          name: 'Form',
+          nameRoute: 'view-form'
+        },
+        {
+          name: 'Common',
+          nameRoute: 'view-common'
+        },
       ]
     }
   }
@@ -74,6 +86,12 @@ export default {
   }
   a {
     text-decoration: none;
+    &.router-link-active {
+      .menu__item {
+        background-color: white;
+        color: black;
+      }
+    }
   }
   &__item {
     padding: 12px 24px;

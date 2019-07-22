@@ -1,4 +1,3 @@
-const path = require('path')
 const fs = require('fs')
 
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
@@ -13,25 +12,17 @@ function getListEntry (folder, listEntry = []){
 }
 
 module.exports = {
-  entry: getListEntry('./src/assets/css'),
-  output: {
-    path: path.join(__dirname, '../brand-kit'),
-    filename: 'main.js',
-    publicPath: '/'
-  },
-  stats: {
-    all: false
-  },
+  entry: [...getListEntry('./src/assets/css'), ...getListEntry('./src/assets/js')],
   module: {
     rules: [
       {
-        test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
+        test: /\.(png|jpe?g|gif|webp|svg)(\?.*)?$/,
         use: [
           {
             loader: 'url-loader',
             options: {
               limit: 0,
-              name: '../brand-kit/img/[name].[hash:8].[ext]'
+              name: '../brand-kit/img/[name].[ext]'
             }
           }
         ]
@@ -43,7 +34,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 0,
-              name: '../brand-kit/fonts/[name].[hash:8].[ext]'
+              name: '../brand-kit/fonts/[name].[ext]'
             }
           }
         ]
@@ -54,7 +45,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '../brand-kit/css/[name].css',
+              name: '../brand-kit/css/[name].[ext]'
             }
           },
           'extract-loader',
@@ -66,6 +57,19 @@ module.exports = {
             }
           }
         ],
+      },
+      {
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '../brand-kit/js/[name].[ext]'
+            }
+          },
+          'babel-loader',
+        ],
+        exclude: [/node_modules/]
       }
     ]
   },

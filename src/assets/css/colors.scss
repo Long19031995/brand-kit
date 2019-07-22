@@ -1,0 +1,97 @@
+// white
+$White: #ffffff;
+
+// Red
+$R50: #faf5f4;
+$R75: #f6d4cb;
+$R100: #faa691;
+$R200: #e66b4c;
+$R400: #bc654f;
+$R600: #955c4e;
+$R800: #6b4940;
+$R900: #43322e;
+
+// Yellow
+$Y50: #f8f5f1;
+$Y75: #f7dec3;
+$Y100: #fcc58b;
+$Y200: #fbb66c;
+$Y400: #dd9b6c;
+$Y600: #af8160;
+$Y800: #785d4a;
+$Y900: #514238;
+
+// Purple
+$P50: #f3f2f8;
+$P75: #ddd8f0;
+$P100: #b0a2e5;
+$P200: #7963cf;
+$P400: #685a9e;
+$P600: #595178;
+$P800: #454058;
+$P900: #322f3c;
+
+// Green
+$G50: #f2f8f5;
+$G75: #daf2e4;
+$G100: #a3e6bf;
+$G200: #60d290;
+$G400: #64b385;
+$G600: #538166;
+$G800: #496555;
+$G900: #2d3c34;
+
+// Ocean
+$O50: #f3f7f9;
+$O75: #d9ebf7;
+$O100: #98cef3;
+$O200: #33adff;
+$O400: #459dd9;
+$O600: #538eb6;
+$O800: #507085;
+$O900: #2c363c;
+
+// Neutral
+$N50: #f6f9fa;
+$N75: #e8edf0;
+$N100: #ced5da;
+$N200: #9da4a8;
+$N400: #71787d;
+$N600: #586065;
+$N800: #373e43;
+$N900: #24292d;
+
+$list-code: ('r', 'y', 'p', 'g', 'o', 'n');
+$list-level: ('50', '75', '100', '200', '400', '600', '800', '900');
+$map-color: ('r50': #faf5f4, 'r75': #f6d4cb, 'r100': #faa691, 'r200': #e66b4c, 'r400': #bc654f, 'r600': #955c4e, 'r800': #6b4940, 'r900': #43322e,
+             'y50': #f8f5f1, 'y75': #f7dec3, 'y100': #fcc58b, 'y200': #fbb66c, 'y400': #dd9b6c, 'y600': #af8160, 'y800': #785d4a, 'y900': #514238,
+             'p50': #f3f2f8, 'p75': #ddd8f0, 'p100': #b0a2e5, 'p200': #7963cf, 'p400': #685a9e, 'p600': #595178, 'p800': #454058, 'p900': #322f3c,
+             'g50': #f2f8f5, 'g75': #daf2e4, 'g100': #a3e6bf, 'g200': #60d290, 'g400': #64b385, 'g600': #538166, 'g800': #496555, 'g900': #2d3c34,
+             'o50': #f3f7f9, 'o75': #d9ebf7, 'o100': #98cef3, 'o200': #33adff, 'o400': #459dd9, 'o600': #538eb6, 'o800': #507085, 'o900': #2c363c,
+             'n50': #f6f9fa, 'n75': #e8edf0, 'n100': #ced5da, 'n200': #9da4a8, 'n400': #71787d, 'n600': #586065, 'n800': #373e43, 'n900': #24292d);
+
+@each $code in $list-code {
+  @each $level in $list-level {
+    .brand-text-#{$code}#{$level} {
+      color: map-get($map-color, #{$code}#{$level});
+    }
+    .brand-bg-#{$code}#{$level} {
+      background-color: map-get($map-color, #{$code}#{$level});
+    }
+    .brand-border-#{$code}#{$level} {
+      border: 1px solid map-get($map-color, #{$code}#{$level});
+    }
+  }
+}
+
+.brand-text-white {
+  color: white;
+}
+
+.brand-bg-white {
+  background-color: white;
+}
+
+.brand-border-white {
+  border: 1px solid white;
+}

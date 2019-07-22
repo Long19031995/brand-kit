@@ -10,17 +10,32 @@ export default new VueRouter({
     {
       path: '/',
       name: 'home',
-      redirect: { name: 'view-button' }
+      redirect: { name: 'view-logo' }
     },
     {
-      path: '/view-button',
-      name: 'view-button',
-      component: () => import('@/view/Button.vue')
+      path: '/logo',
+      name: 'view-logo',
+      component: () => import('@/view/Logo.vue')
     },
     {
-      path: '/view-color',
-      name: 'view-color',
-      component: () => import('@/view/Color.vue')
+      path: '/logo-app',
+      name: 'view-logo-app',
+      component: () => import('@/view/LogoApp.vue')
+    },
+    {
+      path: '/icons',
+      name: 'view-icons',
+      component: () => import('@/view/Icons.vue')
+    },
+    {
+      path: '/view-buttons',
+      name: 'view-buttons',
+      component: () => import('@/view/Buttons.vue')
+    },
+    {
+      path: '/view-colors',
+      name: 'view-colors',
+      component: () => import('@/view/Colors.vue')
     },
     {
       path: '/view-common',

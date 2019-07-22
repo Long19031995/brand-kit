@@ -50,27 +50,28 @@ export default {
     display: flex;
     &__item {
       padding: 12px 24px;
-      border: 1px solid black;
+      border: 1px solid #ccc;
       margin-left: -1px;
-      background-color: black;
-      color: white;
+      background-color: white;
+      color: #ccc;
+      transition: .05s ease-in-out;
       &:first-child() {
         margin-left: 0;
       }
       &:hover {
         cursor: pointer;
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
       }
       &.active {
-        background-color: white;
-        color: black;
+        background-color: black;
+        color: white;
       }
     }
   }
   .list-content {
     &__item {
-      border: 1px solid black;
+      border: 1px solid #ccc;
       margin-top: -1px;
       margin-left: -1px;
       padding: 24px;

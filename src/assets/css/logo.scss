@@ -1,0 +1,47 @@
+@import './fonts.scss';
+
+.brand-logo {
+  display: flex;
+  align-items: baseline;
+  .brand-logo-bflow {
+    margin: 20px 32px 32px 20px;
+  }
+  &.fit {
+    .brand-logo-bflow {
+      margin: 0;
+    }
+    .brand-logo-boost {
+      margin-right: 0;
+      margin-left: 24px;
+      line-height: 40px;
+    }
+  }
+  .brand-logo-bflow {
+    background-image: url(../img/logo/boost-flow-blue.svg);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+    &.white {
+      background-image: url(../img/logo/boost-flow-white.svg);
+    }
+    &.black {
+      background-image: url(../img/logo/boost-flow-black.svg);
+    }
+  }
+  
+  .brand-logo-boost {
+    font-family: $font-oscine-bold;
+    font-size: 80px;
+    letter-spacing: -2px;
+    color: #24292d;
+    margin-right: 32px;
+  }
+  
+  .brand-logo-app {
+    font-family: $font-oscine-regular;
+    font-size: 80px;
+    letter-spacing: -2px;
+    margin-left: -12px;
+    color: #141414;
+  }
+}

@@ -13,11 +13,16 @@
 <script>
 import Menu from '@/components/Menu.vue'
 import Notify from '@/components/Notify.vue'
+import hljs from 'highlight.js'
 
 export default {
   name: 'App',
 
-  components: { Menu, Notify }
+  components: { Menu, Notify },
+
+  mounted () {
+    hljs.configure({useBR: true})
+  }
 }
 </script>
 

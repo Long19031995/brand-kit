@@ -1,0 +1,46 @@
+@import './fonts.scss';
+
+.brand-logo-app {
+  display: flex;
+  align-items: baseline;
+  .brand-app {
+    margin: 26px;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    &.dsc {
+      background-image: url(../img/logo-app/dropship-connector.svg);
+      &.white {
+        background-image: url(../img/logo-app/dropship-connector-white.svg);
+      }
+      &+ .brand-name {
+        line-height: 60px;
+      }
+    }
+    &.phub {
+      background-image: url(../img/logo-app/print-hub.svg);
+      &.white {
+        background-image: url(../img/logo-app/print-hub-white.svg);
+      }
+      &+ .brand-name {
+        line-height: 36px;
+      }
+    }
+  }
+  .brand-name {
+    font-family: $font-oscine-bold;
+    font-size: 80px;
+    letter-spacing: -2px;
+    color: #24292d;
+  }
+  &.fit {
+    .brand-app {
+      margin: 0;
+    }
+    .brand-name {
+      margin-right: 0;
+      margin-left: 24px;
+    }
+  }
+}
+

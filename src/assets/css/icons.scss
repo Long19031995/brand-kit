@@ -1,0 +1,11 @@
+$list-icon: ('arrow-down', 'arrow-left', 'arrow-right', 'arrow-up',
+             'arrow-tail-down', 'arrow-tail-left', 'arrow-tail-right', 'arrow-tail-up',
+             'check', 'cross', 'medal', 'single', 'star');
+
+@each $icon in $list-icon {
+  .brand-icon-#{$icon} {
+    background-image: url('../img/icons/#{$icon}.svg');
+    width: 16px;
+    height: 16px;
+  }
+}

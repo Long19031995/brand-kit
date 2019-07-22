@@ -1,44 +1,61 @@
 @font-face {
   font-family: NotoSans-Regular;
-  src: url('../fonts/NotoSans-Regular.ttf');
+  src: url('../fonts/NotoSans/NotoSans-Regular.ttf');
 }
-
 @font-face {
   font-family: NotoSans-Light;
-  src: url('../fonts/NotoSans-Light.ttf');
+  src: url('../fonts/NotoSans/NotoSans-Light.ttf');
 }
-
 @font-face {
   font-family: NotoSans-Medium;
-  src: url('../fonts/NotoSans-Medium.ttf');
+  src: url('../fonts/NotoSans/NotoSans-Medium.ttf');
 }
-
 @font-face {
   font-family: NotoSans-SemiBold;
-  src: url('../fonts/NotoSans-SemiBold.ttf');
+  src: url('../fonts/NotoSans/NotoSans-SemiBold.ttf');
+}
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url('../fonts/NotoSans/NotoSans-Bold.ttf');
+}
+
+$font-regular: NotoSans-Regular, sans-serif;
+$font-light: NotoSans-Light, sans-serif;
+$font-medium: NotoSans-Medium, sans-serif;
+$font-semibold: NotoSans-SemiBold, sans-serif;
+$font-bold: NotoSans-Bold, sans-serif;
+
+.font-regular {
+  font-family: $font-regular;
+}
+.font-light {
+  font-family: $font-light;
+}
+.font-medium {
+  font-family: $font-medium;
+}
+.font-semibold {
+  font-family: $font-semibold;
+}
+.font-bold {
+  font-family: $font-bold;
 }
 
 @font-face {
-  font-family: NotoSans-Bold;
-  src: url('../fonts/NotoSans-Bold.ttf');
+  font-family: OscineTrial-Regular;
+  src: url('../fonts/OscineTrial/OscineTrial-Regular.ttf');
+}
+@font-face {
+  font-family: OscineTrial-Bold;
+  src: url('../fonts/OscineTrial/OscineTrial-Bold.ttf');
 }
 
-.font-regular {
-  font-family: NotoSans-Regular, sans-serif;
-}
+$font-oscine-regular: OscineTrial-Regular, sans-serif;
+$font-oscine-bold: OscineTrial-Bold, sans-serif;
 
-.font-light {
-  font-family: NotoSans-Light, sans-serif;
+.font-oscine-regular {
+  font-family: $font-oscine-regular;
 }
-
-.font-medium {
-  font-family: NotoSans-Medium, sans-serif;
-}
-
-.font-semibold {
-  font-family: NotoSans-SemiBold, sans-serif;
-}
-
-.font-bold {
-  font-family: NotoSans-Bold, sans-serif;
+.font-oscine-bold {
+  font-family: $font-oscine-bold;
 }

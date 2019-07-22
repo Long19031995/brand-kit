@@ -1,0 +1,89 @@
+.brand-depths {
+  box-shadow: 0px 0px 0px 1px rgba(19, 28, 47, 0.08);
+  position: relative;
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    border-radius: 4px;
+  }
+  &:not(.hover) {
+    &.z500 {
+      &:before {
+        width: calc(100% - 16px);
+        height: calc(100% - 16px);
+        top: 8px;
+        left: 8px;
+        box-shadow: 0px 24px 32px 0px rgba(19, 28, 47, 0.24);
+      }
+    }
+    &.z300 {
+      &:before {
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        top: 4px;
+        left: 4px;
+        box-shadow: 0px 8px 10px 0px rgba(19, 28, 47, 0.16);
+      }
+    }
+    &.z200 {
+      &:before {
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        top: 2px;
+        left: 2px;
+        box-shadow: 0px 4px 6px 0px rgba(19, 28, 47, 0.16);
+      }
+    }
+    &.z100 {
+      &:before {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        top: 1px;
+        left: 1px;
+        box-shadow: 0px 2px 1px 0px rgba(19, 28, 47, 0.16);
+      }
+    }
+  }
+
+  &.hover {
+    &:hover {
+      &.z500 {
+        &:before {
+          width: calc(100% - 16px);
+          height: calc(100% - 16px);
+          top: 8px;
+          left: 8px;
+          box-shadow: 0px 24px 32px 0px rgba(19, 28, 47, 0.24);
+        }
+      }
+      &.z300 {
+        &:before {
+          width: calc(100% - 8px);
+          height: calc(100% - 8px);
+          top: 4px;
+          left: 4px;
+          box-shadow: 0px 8px 10px 0px rgba(19, 28, 47, 0.16);
+        }
+      }
+      &.z200 {
+        &:before {
+          width: calc(100% - 4px);
+          height: calc(100% - 4px);
+          top: 2px;
+          left: 2px;
+          box-shadow: 0px 4px 6px 0px rgba(19, 28, 47, 0.16);
+        }
+      }
+      &.z100 {
+        &:before {
+          width: calc(100% - 2px);
+          height: calc(100% - 2px);
+          top: 1px;
+          left: 1px;
+          box-shadow: 0px 2px 1px 0px rgba(19, 28, 47, 0.16);
+        }
+      }
+    }
+  }
+}

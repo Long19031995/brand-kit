@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>e8e4f394-0dd1-45cb-a1c8-7774d99f7776@1.00x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M9,9 L9,1 C9,0.4 8.6,0 8,0 L8,0 C7.4,0 7,0.4 7,1 L7,9 L2,9 L8,16 L14,9 L9,9 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/16/Arrow/Tail/Down">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Arrow" fill="#24292D" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
