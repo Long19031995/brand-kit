@@ -140,7 +140,7 @@
     "http-deceiver": "^1.2.7",
     "http-errors": "^1.7.2",
     "http-parser-js": "^0.4.10",
-    "http-proxy": "^1.17.0",
+    "http-proxy": "^1.18.1",
     "http-proxy-middleware": "^0.19.1",
     "iconv-lite": "^0.4.24",
     "import-local": "^2.0.0",
