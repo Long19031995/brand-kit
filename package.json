@@ -54,7 +54,7 @@
     "array-uniq": "^1.0.3",
     "array-unique": "^0.3.2",
     "assign-symbols": "^1.0.0",
-    "async": "^1.5.2",
+    "async": "^3.2.2",
     "async-each": "^1.0.3",
     "atob": "^2.1.2",
     "balanced-match": "^1.0.0",
